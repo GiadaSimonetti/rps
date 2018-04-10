@@ -5,9 +5,7 @@ describe("Feature test", function() {
     playerOne = new PlayerOne();
   });
 
-  describe("index", function() {
-    it("returns the move", function() {
-      expect(playerOne.move).toBe("scissor");
-    });
+  it("returns player one move", function() {
+    expect(playerOne.move).toBe("scissor");
   });
 });
