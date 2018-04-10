@@ -1,13 +1,13 @@
 describe("Feature test", function() {
-  var rps;
+  var playerOne;
 
   beforeEach(function() {
-    rps = new Rps();
+    playerOne = new PlayerOne();
   });
 
   describe("index", function() {
     it("returns the move", function() {
-      expect(paper).toBe(true);
+      expect(playerOne.move).toBe("scissor");
     });
   });
 });
