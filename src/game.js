@@ -5,7 +5,7 @@ Game.prototype.match = function(player1, player2) {
     if (player2 === "rock") {
       return "It's a draw!";
     } else if (player2 === "paper") {
-      return player1 + " wins!";
+      return player2 + " wins!";
     } else if (player2 === "scissors") {
       return player1 + " wins!";
     }
