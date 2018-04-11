@@ -1,15 +1,13 @@
 describe("Feature test", function() {
   var game;
-  var playerOne;
-  var playerTwo;
+  var player;
 
   beforeEach(function() {
     game = new Game();
-    playerOne = new PlayerOne();
-    playerTwo = new PlayerTwo();
+    player = new Player(move);
   });
 
-  it("returns player one move", function() {
-    expect(playerOne.move).toEqual("paper");
+  it("returns player move", function() {
+    expect(player.move).toEqual("paper");
   });
 });

@@ -1,5 +1,4 @@
-function Game() {
-  this.playerOne = new PlayerOne(move);
-  this.playerTwo = new PlayerTwo(move);
+function Game(player) {
+  this.player = new Player(move);
   // this.move = turn.currentMove;
 }
