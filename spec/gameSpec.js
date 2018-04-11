@@ -31,6 +31,38 @@ describe("Feature test", function() {
     expect(game.matchDraw("Spock", "Spock")).toEqual("It's a draw!");
   });
 
+  it("returns 'rock wins' when 'rock'-'scissors'", function() {
+    expect(game.rockWins("rock", "scissors")).toEqual("rock wins!");
+  });
+
+  it("returns 'rock wins' when 'rock'-'lizard'", function() {
+    expect(game.rockWins("rock", "lizard")).toEqual("rock wins!");
+  });
+
+  it("returns 'rock wins' when 'scissors'-'rock'", function() {
+    expect(game.rockWins("scissors", "rock")).toEqual("rock wins!");
+  });
+
+  it("returns 'rock wins' when 'lizard'-'rock'", function() {
+    expect(game.rockWins("lizard", "rock")).toEqual("rock wins!");
+  });
+
+  it("returns 'paper wins' when 'paper'-'rock'", function() {
+    expect(game.paperWins("paper", "rock")).toEqual("paper wins!");
+  });
+
+  it("returns 'paper wins' when 'paper'-'Spock'", function() {
+    expect(game.paperWins("paper", "Spock")).toEqual("paper wins!");
+  });
+
+  it("returns 'paper wins' when 'rock'-'paper'", function() {
+    expect(game.paperWins("rock", "paper")).toEqual("paper wins!");
+  });
+
+  it("returns 'paper wins' when 'Spock'-'paper'", function() {
+    expect(game.paperWins("Spock", "paper")).toEqual("paper wins!");
+  });
+
   // it("returns 'paper wins' when 'rock'-'paper'", function() {
   //   expect(game.match("rock", "paper")).toEqual("paper wins!");
   // });
