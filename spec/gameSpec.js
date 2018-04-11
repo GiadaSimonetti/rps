@@ -23,6 +23,14 @@ describe("Feature test", function() {
     expect(game.match("rock", "scissors")).toEqual("rock wins!");
   });
 
+  it("returns 'rock wins' when 'rock'-'lizard'", function() {
+    expect(game.match("rock", "scissors")).toEqual("rock wins!");
+  });
+
+  it("returns 'Spock wins' when 'rock'-'Spock'", function() {
+    expect(game.match("rock", "Spock")).toEqual("Spock wins!");
+  });
+
   it("returns 'paper wins' when 'paper'-'rock'", function() {
     expect(game.match("paper", "rock")).toEqual("paper wins!");
   });
