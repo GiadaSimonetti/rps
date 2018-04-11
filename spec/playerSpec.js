@@ -5,7 +5,7 @@ describe("Feature test", function() {
     player = new Player("paper");
   });
 
-  it("returns player one move", function() {
+  it("returns player's move", function() {
     expect(player.currentMove).toBe("paper");
   });
 });
