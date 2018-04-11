@@ -41,3 +41,15 @@ Game.prototype.scissorsWins = function(player1, player2) {
     }
   }
 };
+
+Game.prototype.lizardWins = function(player1, player2) {
+  if (player1 === "lizard") {
+  }
+  if (player2 === "paper" || player2 === "Spock") {
+    return player1 + " wins!";
+  } else if (player2 === "lizard") {
+    if (player1 === "paper" || player1 === "Spock") {
+      return player2 + " wins!";
+    }
+  }
+};

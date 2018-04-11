@@ -79,35 +79,19 @@ describe("Feature test", function() {
     expect(game.scissorsWins("lizard", "scissors")).toEqual("scissors wins!");
   });
 
-  // it("returns 'paper wins' when 'rock'-'paper'", function() {
-  //   expect(game.match("rock", "paper")).toEqual("paper wins!");
-  // });
-  //
-  // it("returns 'rock wins' when 'rock'-'scissors'", function() {
-  //   expect(game.match("rock", "scissors")).toEqual("rock wins!");
-  // });
-  //
-  // it("returns 'rock wins' when 'rock'-'lizard'", function() {
-  //   expect(game.match("rock", "scissors")).toEqual("rock wins!");
-  // });
-  //
-  // it("returns 'Spock wins' when 'rock'-'Spock'", function() {
-  //   expect(game.match("rock", "Spock")).toEqual("Spock wins!");
-  // });
-  //
-  // it("returns 'paper wins' when 'paper'-'rock'", function() {
-  //   expect(game.match("paper", "rock")).toEqual("paper wins!");
-  // });
-  //
-  // it("returns 'scissors wins' when 'paper'-'scissors'", function() {
-  //   expect(game.match("paper", "scissors")).toEqual("scissors wins!");
-  // });
-  //
-  // it("returns 'rock wins' when 'scissors'-'rock'", function() {
-  //   expect(game.match("scissors", "rock")).toEqual("rock wins!");
-  // });
-  //
-  // it("returns 'scissors wins' when 'scissors'-'paper'", function() {
-  //   expect(game.match("scissors", "paper")).toEqual("scissors wins!");
-  // });
+  it("returns 'lizard wins' when 'lizard'-'paper'", function() {
+    expect(game.lizardWins("lizard", "paper")).toEqual("lizard wins!");
+  });
+
+  it("returns 'lizard wins' when 'lizard'-'Spock'", function() {
+    expect(game.lizardWins("lizard", "Spock")).toEqual("lizard wins!");
+  });
+
+  it("returns 'lizard wins' when 'paper'-'lizard'", function() {
+    expect(game.lizardWins("paper", "lizard")).toEqual("lizard wins!");
+  });
+
+  it("returns 'lizard wins' when 'lizard'-'Spock'", function() {
+    expect(game.lizardWins("lizard", "Spock")).toEqual("lizard wins!");
+  });
 });
