@@ -6,6 +6,6 @@ describe("Feature test", function() {
   });
 
   it("returns player two move", function() {
-    expect(playerTwo.move).toBe("rock");
+    expect(playerTwo.move).toEqual("rock");
   });
 });
