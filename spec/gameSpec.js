@@ -4,10 +4,10 @@ describe("Feature test", function() {
 
   beforeEach(function() {
     game = new Game();
-    player = new Player(move);
+    player = new Player("paper");
   });
 
   it("returns player move", function() {
-    expect(player.move).toEqual("paper");
+    expect(player.currentMove).toEqual("paper");
   });
 });
