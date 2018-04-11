@@ -1,5 +1,5 @@
 function Player(move) {
-  this.move = "paper";
+  this.currentMove = move;
 }
 
 // Player.prototype.showMove = function(move) {

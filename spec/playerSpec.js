@@ -2,10 +2,10 @@ describe("Feature test", function() {
   var player;
 
   beforeEach(function() {
-    player = new Player();
+    player = new Player("paper");
   });
 
   it("returns player one move", function() {
-    expect(player.move).toBe("paper");
+    expect(player.currentMove).toBe("paper");
   });
 });
