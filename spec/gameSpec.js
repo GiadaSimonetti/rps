@@ -94,4 +94,20 @@ describe("Feature test", function() {
   it("returns 'lizard wins' when 'lizard'-'Spock'", function() {
     expect(game.lizardWins("lizard", "Spock")).toEqual("lizard wins!");
   });
+
+  it("returns 'Spock wins' when 'Spock'-'rock'", function() {
+    expect(game.spockWins("Spock", "rock")).toEqual("Spock wins!");
+  });
+
+  it("returns 'Spock wins' when 'Spock'-'scissors'", function() {
+    expect(game.spockWins("Spock", "scissors")).toEqual("Spock wins!");
+  });
+
+  it("returns 'Spock wins' when 'rock'-'Spock'", function() {
+    expect(game.spockWins("rock", "Spock")).toEqual("Spock wins!");
+  });
+
+  it("returns 'Spock wins' when 'Spock'-'scissors'", function() {
+    expect(game.spockWins("Spock", "scissors")).toEqual("Spock wins!");
+  });
 });

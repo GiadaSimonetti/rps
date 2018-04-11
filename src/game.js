@@ -53,3 +53,15 @@ Game.prototype.lizardWins = function(player1, player2) {
     }
   }
 };
+
+Game.prototype.spockWins = function(player1, player2) {
+  if (player1 === "Spock") {
+  }
+  if (player2 === "rock" || player2 === "scissors") {
+    return player1 + " wins!";
+  } else if (player2 === "Spock") {
+    if (player1 === "rock" || player1 === "scissors") {
+      return player2 + " wins!";
+    }
+  }
+};
