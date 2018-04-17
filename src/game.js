@@ -1,5 +1,11 @@
 function Game(player) {}
 
+Game.prototype.result = function(player1, player2) {
+  if ((player1, player2)) {
+    this.matchDraw();
+  }
+};
+
 Game.prototype.matchDraw = function(player1, player2) {
   if (player1 === player2) {
     return "It's a draw!";
