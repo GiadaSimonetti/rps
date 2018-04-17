@@ -1,3 +1,3 @@
-# RPSLS - (Rock - Paper - Scissors - Lizard - Spock)
+# RPSLS - (Rock - Paper - Scissors - Spock - Lizard)
 
-Rock - Paper - Scissors - Lizard - Spock game in Javascript and Karma for the tests
+Rock - Paper - Scissors - Spock - Lizard game in Javascript and Karma for the tests

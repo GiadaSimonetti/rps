@@ -7,7 +7,7 @@
 //
 //   $("#btnMovePlayer1").click(function() {
 //   event.preventDefault();
-//   var movePlayer1 = $("#rpsls1").val();
+//   var movePlayer1 = $("#rpssl1").val();
 //   displayMovePlayer1(movePlayer1);
 // });
 //
