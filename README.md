@@ -2,7 +2,7 @@
 
 Rock - Paper - Scissors - Spock - Lizard game in Javascript and Karma for the tests
 
-![RPSLS](./images/RPSLS.png")
+![RPSLS]("./images/RPSLS.png")
 It's easy:
 
 * "Scissors cuts paper,
@@ -16,4 +16,4 @@ It's easy:
 * Spock vaporizes rock,
 * (and as it always has), rock crushes scissors."
 
-![Rock-P  aper-Scissors-Spock-Lizard](./images/Rock-Paper-Scissors-Lizard-Spock.jpg")
+![Rock-Paper-Scissors-Spock-Lizard]("./images/Rock-Paper-Scissors-Lizard-Spock.jpg")
