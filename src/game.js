@@ -1,4 +1,4 @@
-function Game(player1 = new Player(), player2 = new Player()) {}
+function Game() {}
 
 Game.prototype.result = function(player1, player2) {
   if (this.matchDraw(player1, player2)) {
