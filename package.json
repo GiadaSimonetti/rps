@@ -21,7 +21,9 @@
   "homepage": "https://github.com/GiadaSimonetti/rps#readme",
   "dependencies": {
     "jasmine": "^3.1.0",
-    "karma": "^2.0.0"
+    "karma": "^2.0.0",
+    "karma-spec-reporter": "0.0.32",
+    "npm": "^6.0.0"
   },
   "devDependencies": {
     "jasmine-core": "^3.1.0",
