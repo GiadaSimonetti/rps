@@ -3,6 +3,7 @@
 Rock - Paper - Scissors - Spock - Lizard game in Javascript and Karma for the tests
 
 ![RPSLS](./images/RPSLS.png?raw=true)
+
 It's easy:
 
 * "Scissors cuts paper,

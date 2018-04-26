@@ -100,21 +100,21 @@ describe("Feature test", function() {
     );
   });
 
-  // it("returns 'scissors wins' when 'paper'-'scissors'", function() {
-  //   player1 = jasmine.createSpyObj("player1", { move: "paper" });
-  //   player2 = jasmine.createSpyObj("player2", { move: "scissors" });
-  //   expect(game.result(player1.move(), player2.move())).toEqual(
-  //     "scissors wins!"
-  //   );
-  // });
+  it("returns 'scissors wins' when 'paper'-'scissors'", function() {
+    player1 = jasmine.createSpyObj("player1", { move: "paper" });
+    player2 = jasmine.createSpyObj("player2", { move: "scissors" });
+    expect(game.result(player1.move(), player2.move())).toEqual(
+      "scissors wins!"
+    );
+  });
 
-  // it("returns 'scissors wins' when 'lizard'-'scissors'", function() {
-  //   player1 = jasmine.createSpyObj("player1", { move: "lizard" });
-  //   player2 = jasmine.createSpyObj("player2", { move: "scissors" });
-  //   expect(game.result(player1.move(), player2.move())).toEqual(
-  //     "scissors wins!"
-  //   );
-  // });
+  it("returns 'scissors wins' when 'lizard'-'scissors'", function() {
+    player1 = jasmine.createSpyObj("player1", { move: "lizard" });
+    player2 = jasmine.createSpyObj("player2", { move: "scissors" });
+    expect(game.result(player1.move(), player2.move())).toEqual(
+      "scissors wins!"
+    );
+  });
 
   it("returns 'lizard wins' when 'lizard'-'paper'", function() {
     player1 = jasmine.createSpyObj("player1", { move: "lizard" });
@@ -128,17 +128,17 @@ describe("Feature test", function() {
     expect(game.result(player1.move(), player2.move())).toEqual("lizard wins!");
   });
 
-  // it("returns 'lizard wins' when 'paper'-'lizard'", function() {
-  //   player1 = jasmine.createSpyObj("player1", { move: "paper" });
-  //   player2 = jasmine.createSpyObj("player2", { move: "lizard" });
-  //   expect(game.result(player1.move(), player2.move())).toEqual("lizard wins!");
-  // });
-  //
-  // it("returns 'lizard wins' when 'Spock'-'lizard'", function() {
-  //   player1 = jasmine.createSpyObj("player1", { move: "Spock" });
-  //   player2 = jasmine.createSpyObj("player2", { move: "lizard" });
-  //   expect(game.result(player1.move(), player2.move())).toEqual("lizard wins!");
-  // });
+  it("returns 'lizard wins' when 'paper'-'lizard'", function() {
+    player1 = jasmine.createSpyObj("player1", { move: "paper" });
+    player2 = jasmine.createSpyObj("player2", { move: "lizard" });
+    expect(game.result(player1.move(), player2.move())).toEqual("lizard wins!");
+  });
+
+  it("returns 'lizard wins' when 'Spock'-'lizard'", function() {
+    player1 = jasmine.createSpyObj("player1", { move: "Spock" });
+    player2 = jasmine.createSpyObj("player2", { move: "lizard" });
+    expect(game.result(player1.move(), player2.move())).toEqual("lizard wins!");
+  });
 
   it("returns 'Spock wins' when 'Spock'-'rock'", function() {
     player1 = jasmine.createSpyObj("player1", { move: "Spock" });
@@ -157,7 +157,7 @@ describe("Feature test", function() {
   //   player2 = jasmine.createSpyObj("player2", { move: "Spock" });
   //   expect(game.result(player1.move(), player2.move())).toEqual("Spock wins!");
   // });
-
+  //
   // it("returns 'Spock wins' when 'scissors'-'Spock'", function() {
   //   player1 = jasmine.createSpyObj("player1", { move: "scissors" });
   //   player2 = jasmine.createSpyObj("player2", { move: "Spock" });
