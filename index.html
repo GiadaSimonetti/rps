@@ -12,34 +12,27 @@
       <li>paper</li>
       <li>scissors</li>
       <li>lizard</li>
-      <li>Spock</li>
+      <li>spock</li>
 
     </ol>
-    <p>Player1 Select your choice:</p>
+    <!-- <p>Player1 Select your choice:</p> -->
 
     <div>
       <form action='index.html' method='post' onsubmit='return false;'>
-        Choose a move:
+        Player 1 select your choice:
         <input id='input-player1' type="text" name='player1move'>
-        <input id='submit1-btn' type='submit'>
-      </form>
-    </div>
-    <div>
-      <p id="player1"></p>
-    </div>
-
-    <p>Player2 Select your choice:</p>
-
-    <div>
-      <form action='index.html' method='post' onsubmit='return false;'>
-        Choose a move:
+        <br />
+        Player 2 select your choice:
         <input id='input-player2' type="text" name='player2move'>
-        <input id='submit2-btn' type='submit'>
+        <br />
+        <input id='submit-btn' type='submit'>
       </form>
     </div>
     <div>
-      <p id="player2"></p>
+      <p> <span id="player1"></span> <span id="player2"></span> </p>
+      <p id="match-result"></p>
     </div>
+
     <input type='button' value='Play again' onClick='window.location.reload()'>
     <script src="src/player.js"></script>
     <script src="src/game.js"></script>
