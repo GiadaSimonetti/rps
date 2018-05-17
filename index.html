@@ -2,48 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://use.fontawesome.com/5d80a0eb69.js"></script>
-    <script src="src/player.js"></script>
-    <script src="src/game.js"></script>
-    <script src="src/interface.js"></script>
     <title>Rock Paper Scissors Spock Lizard</title>
+    <script src="https://use.fontawesome.com/5d80a0eb69.js"></script>
   </head>
   <body>
     <h1>Rock Paper Scissors Spock Lizard</h1>
+    <ol>
+      <li>rock</li>
+      <li>paper</li>
+      <li>scissors</li>
+      <li>lizard</li>
+      <li>Spock</li>
+
+    </ol>
     <p>Player1 Select your choice:</p>
 
-    <form action="">
-      <select name="rpssl1">
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-        <option value="spock">Spock</option>
-        <option value="lizard">Lizard</option>
-      </select>
-      <br><br>
-      <input id="btnMovePlayer1" type="submit">
-    </form>
-
-    <div id="player1">
-
+    <div>
+      <form action='index.html' method='post' onsubmit='return false;'>
+        Choose a move:
+        <input id='input-player1' type="text" name='player1move'>
+        <input id='submit1-btn' type='submit'>
+      </form>
+    </div>
+    <div>
+      <p id="player1"></p>
     </div>
 
     <p>Player2 Select your choice:</p>
 
-    <form action="">
-      <select name="rpssl2">
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-        <option value="spock">Spock</option>
-        <option value="lizard">Lizard</option>
-      </select>
-      <br><br>
-      <input  id="btnMovePlayer2" type="submit">
-    </form>
-    <div id="player2">
-
+    <div>
+      <form action='index.html' method='post' onsubmit='return false;'>
+        Choose a move:
+        <input id='input-player2' type="text" name='player2move'>
+        <input id='submit2-btn' type='submit'>
+      </form>
     </div>
+    <div>
+      <p id="player2"></p>
+    </div>
+    <input type='button' value='Play again' onClick='window.location.reload()'>
+    <script src="src/player.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/interface.js"></script>
   </body>
 </html>
