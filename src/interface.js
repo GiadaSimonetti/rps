@@ -1,9 +1,10 @@
 let game = new Game();
+let movesArray = ["rock", "paper", "scissors", "lizard", "spock"];
+let move1 = movesArray[Math.floor(Math.random()* movesArray.length)];
+let move2 = movesArray[Math.floor(Math.random()* movesArray.length)];
+let response = game.result(move1, move2);
 
 document.getElementById("submit-btn").addEventListener("click", () => {
-  let move1 = document.getElementById("input-player1").value;
-  let move2 = document.getElementById("input-player2").value;
-  let response = game.result(move1, move2);
 
   document.getElementById("player1").innerHTML =
     `<i class="fa fa-hand-` + move1 + `-o" aria-hidden="true"></i> VS `;
