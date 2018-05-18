@@ -7,15 +7,22 @@
   </head>
   <body>
     <h1>Rock Paper Scissors Spock Lizard</h1>
-
-      <p><span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span> rock</p>
-      <p><span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span> paper</p>
-      <p><span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span> scissors</p>
-      <p><span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span> lizard</p>
-      <p><span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span> spock</p>
+    <p><span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span> rock</p>
+    <p><span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span> paper</p>
+    <p><span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span> scissors</p>
+    <p><span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span> lizard</p>
+    <p><span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span> spock</p>
 
     <div>
-      <button id="submit-btn" type="button" name="button" value="play">Click to play!</button>
+      <form action='index.html' method='post' onsubmit='return false;'>
+        Player 1 select your choice:
+        <input id='input-player1' type="text" name='player1move'>
+        <input id='submit-btn1' type='submit'>
+      </form>
+    </div>
+
+    <div>
+      <button id="submit-btn2" type="button" name="button" value="play">Click to play!</button>
     </div>
     <div>
       <p> <span id="player1"></span> <span id="player2"></span> </p>
