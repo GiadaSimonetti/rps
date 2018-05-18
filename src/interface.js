@@ -13,6 +13,8 @@ document.getElementById("submit-btn1").addEventListener("click", () => {
     document.getElementById("player2").innerHTML =
     `VS <i class="fa fa-hand-` + move2 + `-o" aria-hidden="true"></i>`;
     document.getElementById("match-result").innerHTML = response;
+    document.getElementById("submit-btn2").style.visibility = "hidden";
+    document.getElementById("submit-btn1").style.visibility = "hidden";
 
   });
 });
