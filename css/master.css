@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://i.pinimg.com/originals/b7/9d/4e/b79d4edef595d92680fb56f5d28248ac.jpg");
+  background-image: url(../images/blackboard2.jpg);
   color: #f6f4f1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@ body {
 
 .parallax {
     /* The image used */
-    background-image: url("https://i.pinimg.com/originals/b7/9d/4e/b79d4edef595d92680fb56f5d28248ac.jpg");
+    background-image: url(../images/blackboard.jpg);
 
     /* Set a specific height */
     min-height: 700px;
@@ -31,6 +31,10 @@ body {
 h1, h3 {
   font-family: 'Fredericka the Great', cursive;
   font-variant: small-caps;
+}
+
+h3 {
+  color: #ed7777;
 }
 
 #rules {
@@ -80,5 +84,5 @@ input:focus {
 }
 
 #display-moves, #match-result {
-  font-size: 100;
+  font-size: 50;
 }
