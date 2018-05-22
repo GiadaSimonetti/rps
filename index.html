@@ -4,33 +4,42 @@
     <meta charset="utf-8">
     <title>Rock Paper Scissors Spock Lizard</title>
     <script src="https://use.fontawesome.com/5d80a0eb69.js"></script>
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto|Yatra+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
   </head>
   <body>
     <h1>Rock Paper Scissors Spock Lizard</h1>
 
-    <p>"Scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>
-      cuts paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>,</p>
-    <p>paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>
-      covers rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>,</p>
-    <p>rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>
-      crushes lizard  <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>,</p>
-    <p>lizard <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>
-      poisons Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>,</p>
-    <p>Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>
-      smashes scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>,</p>
-    <p>scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>
-      decapitates lizard <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>,</p>
-    <p>lizard <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>
-      eats paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>,</p>
-    <p>paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>
-      disproves Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>,</p>
-    <p>Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>
-      vaporizes rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>,</p>
-    <p>(and as it always has), rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>
-      crushes scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>."</p>
+    <div class="parallax">
+
+      <div id="rules">
+        <h3>rules :</h3>
+        <p>"Scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>
+          cuts paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>,</p>
+        <p>paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>
+          covers rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>,</p>
+        <p>rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>
+          crushes lizard  <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>,</p>
+        <p>lizard <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>
+          poisons Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>,</p>
+        <p>Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>
+          smashes scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>,</p>
+        <p>scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>
+          decapitates lizard <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>,</p>
+        <p>lizard <span><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></span>
+          eats paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>,</p>
+        <p>paper <span><i class="fa fa-hand-paper-o" aria-hidden="true"></i></span>
+          disproves Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>,</p>
+        <p>Spock <span><i class="fa fa-hand-spock-o" aria-hidden="true"></i></span>
+          vaporizes rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>,</p>
+        <p>(and as it always has), rock <span><i class="fa fa-hand-rock-o" aria-hidden="true"></i></span>
+          crushes scissors <span><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></span>."</p>
+        </div>
+    </div>
 
     <br/>
+    <div class="content">
     <div>
       <form action="index.html" method="post" onsubmit="return false;">
         Select your move:
@@ -44,11 +53,12 @@
       <button id="submit-btn2" type="button" name="button" value="play">Click to play!</button>
     </div>
     <div>
-      <p> <span id="player1"></span> <span id="player2"></span> </p>
+      <p id="display-moves"> <span id="player1"></span> <span id="player2"></span> </p>
       <p id="match-result"></p>
     </div>
 
-    <input type="button" value="Try again" onClick="window.location.reload()">
+    <input id="reset-btn" type="button" value="Try again" onClick="window.location.reload()">
+  </div>
     <script src="src/player.js"></script>
     <script src="src/game.js"></script>
     <script src="src/interface.js"></script>
