@@ -37,8 +37,9 @@ $ npm install
 $ open index.html
 ```
 - go to the browser
+- click the button `Choose your weapon!` to choose which weapon use
 - click the button `Click to play!` to start the game
-- click the button `Play again` to start a new match
+- click the button `Try again` to start a new match
 
 
 ### To run the tests

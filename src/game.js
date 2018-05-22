@@ -76,29 +76,3 @@ Game.prototype.spockWins = function(player1, player2) {
     return player2 + " wins!";
   }
 };
-
-// class Game{
-//   constructor(){
-//     this.moves = [
-//       { paper: scissors },
-//       { rock: paper },
-//       { lizard: rock },
-//       { spock: lizard },
-//       { scissors: spock },
-//       { lizard: scissors },
-//       { paper: lizard },
-//       { spock: paper },
-//       { rock: spock },
-//       { scissors: rock }
-//     ];
-//   }
-//
-//   result(){
-//   for (var i = 0; i < this.moves.length; i++) {
-//       if (this.outcomes[i].player1 == player1 && this.outcomes[i].player2 == player2) {
-//         return 'Player ' + this.outcomes[i].winner + ' wins!'
-//       }
-//     }
-//   return 'Its a draw!'
-//   }
-// };
