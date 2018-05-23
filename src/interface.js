@@ -22,6 +22,7 @@ document.getElementById("submit-btn1").addEventListener("click", () => {
     matchResult.style.fontSize= "50px";
     document.getElementById("submit-btn2").style.visibility = "hidden";
     document.getElementById("submit-btn1").style.visibility = "hidden";
+    document.getElementById("input-player1").style.visibility = "hidden";
 
   });
 });

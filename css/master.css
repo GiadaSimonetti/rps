@@ -69,6 +69,25 @@ h3 {
   margin: auto;
   width: 50%;
 }
+/*
+.astext {
+  background:none;
+  border:none;
+  margin:20;
+  padding:20;
+  cursor: pointer;
+  color: #f6f4f1;
+  font-size: 80px;
+}
+
+.astext:active{
+  color: #ed7777;
+}
+
+.astext:focus{
+  color: #ed7777;
+} */
+
 
 input[type=text] {
     width: 200px;
