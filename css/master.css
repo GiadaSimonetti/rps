@@ -83,7 +83,3 @@ input:focus {
     border: 1px solid #ed7777;
     box-shadow: 0 0 10px #ed7777;
 }
-
-#display-moves, #match-result {
-  font-size: 50;
-}
