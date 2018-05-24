@@ -15,6 +15,8 @@ let userMoves = document.getElementsByClassName("astext");
     p1.innerHTML =
     `<i class="fa fa-hand-` + move1.value + `-o" aria-hidden="true"></i> `;
     p1.style.fontSize= "100px";
+    
+    document.getElementById("submit-btn1").style.visibility = "hidden";
 
     document.getElementById("submit-btn2").addEventListener("click", () => {
 
@@ -25,7 +27,6 @@ let userMoves = document.getElementsByClassName("astext");
       matchResult.innerHTML = response;
       matchResult.style.fontSize= "50px";
       document.getElementById("submit-btn2").style.visibility = "hidden";
-      document.getElementById("submit-btn1").style.visibility = "hidden";
 
     });
   });

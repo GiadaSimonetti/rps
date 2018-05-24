@@ -87,3 +87,7 @@ h3 {
 .astext:focus{
   color: #ed7777;
 }
+
+#player-choices-icons {
+  padding-bottom: 40px;
+}
