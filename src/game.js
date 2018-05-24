@@ -1,78 +1,27 @@
-function Game() {}
-
-Game.prototype.result = function(player1, player2) {
-  if (this.matchDraw(player1, player2)) {
-    return this.matchDraw(player1, player2);
-  } else if (this.rockWins(player1, player2)) {
-    return this.rockWins(player1, player2);
-  } else if (this.paperWins(player1, player2)) {
-    return this.paperWins(player1, player2);
-  } else if (this.scissorsWins(player1, player2)) {
-    return this.scissorsWins(player1, player2);
-  } else if (this.lizardWins(player1, player2)) {
-    return this.lizardWins(player1, player2);
-  } else if (this.spockWins(player1, player2)) {
-    return this.spockWins(player1, player2);
+class Game {
+  constructor(){
+    this.combinations = [
+      ["paper", "scissors"],
+      ["rock", "paper"],
+      ["lizard", "rock"],
+      ["spock", "lizard"],
+      ["scissors", "spock"],
+      ["lizard", "scissors"],
+      ["paper", "lizard"],
+      ["spock", "paper"],
+      ["rock", "spock"],
+      ["scissors", "rock"]
+    ];
   }
-};
 
-Game.prototype.matchDraw = function(player1, player2) {
-  if (player1 === player2) {
-    return "It's a draw!";
-  }
-};
-
-Game.prototype.rockWins = function(player1, player2) {
-  if (player1 === "rock" && (player2 === "scissors" || player2 === "lizard")) {
-    return player1 + " wins!";
-  } else if (
-    player2 === "rock" &&
-    (player1 === "scissors" || player1 === "lizard")
-  ) {
-    return player2 + " wins!";
-  }
-};
-
-Game.prototype.paperWins = function(player1, player2) {
-  if (player1 === "paper" && (player2 === "rock" || player2 === "spock")) {
-    return player1 + " wins!";
-  } else if (
-    player2 === "paper" &&
-    (player1 === "rock" || player1 === "spock")
-  ) {
-    return player2 + " wins!";
-  }
-};
-
-Game.prototype.scissorsWins = function(player1, player2) {
-  if (player1 === "scissors" && (player2 === "paper" || player2 === "lizard")) {
-    return player1 + " wins!";
-  } else if (
-    player2 === "scissors" &&
-    (player1 === "paper" || player1 === "lizard")
-  ) {
-    return player2 + " wins!";
-  }
-};
-
-Game.prototype.lizardWins = function(player1, player2) {
-  if (player1 === "lizard" && (player2 === "paper" || player2 === "spock")) {
-    return player1 + " wins!";
-  } else if (
-    player2 === "lizard" &&
-    (player1 === "paper" || player1 === "spock")
-  ) {
-    return player2 + " wins!";
-  }
-};
-
-Game.prototype.spockWins = function(player1, player2) {
-  if (player1 === "spock" && (player2 === "rock" || player2 === "scissors")) {
-    return player1 + " wins!";
-  } else if (
-    player2 === "spock" &&
-    (player1 === "rock" || player1 === "scissors")
-  ) {
-    return player2 + " wins!";
-  }
-};
+  result(player1, player2){
+    for (var i = 0; i < this.combinations.length; i++) {
+        if (player1 === this.combinations[i][0] && player2 === this.combinations[i][1]) {
+          return player2 + " wins!";
+        } else if (player1 === this.combinations[i][1] && player2 === this.combinations[i][0]){
+          return player1 + " wins!";
+        }
+      }
+      return "It's a tie!";
+    }
+}

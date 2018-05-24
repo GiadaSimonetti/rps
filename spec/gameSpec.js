@@ -5,34 +5,34 @@ describe("Feature test", function() {
     game = new Game();
   });
 
-  it("returns 'It's a draw!' when player1 is equal player2 ('rock' - 'rock')", function() {
+  it("returns 'It's a tie!' when player1 is equal player2 ('rock' - 'rock')", function() {
     player1 = jasmine.createSpyObj("player1", { move: "rock" });
     player2 = jasmine.createSpyObj("player2", { move: "rock" });
-    expect(game.result(player1.move(), player2.move())).toEqual("It's a draw!");
+    expect(game.result(player1.move(), player2.move())).toEqual("It's a tie!");
   });
 
-  it("returns 'It's a draw!' when player1 is equal player2 ('paper' - 'paper')", function() {
+  it("returns 'It's a tie!' when player1 is equal player2 ('paper' - 'paper')", function() {
     player1 = jasmine.createSpyObj("player1", { move: "paper" });
     player2 = jasmine.createSpyObj("player2", { move: "paper" });
-    expect(game.result(player1.move(), player2.move())).toEqual("It's a draw!");
+    expect(game.result(player1.move(), player2.move())).toEqual("It's a tie!");
   });
 
-  it("returns 'It's a draw!' when player1 is equal player2 ('scissors' - 'scissors')", function() {
+  it("returns 'It's a tie!' when player1 is equal player2 ('scissors' - 'scissors')", function() {
     player1 = jasmine.createSpyObj("player1", { move: "scissors" });
     player2 = jasmine.createSpyObj("player2", { move: "scissors" });
-    expect(game.result(player1.move(), player2.move())).toEqual("It's a draw!");
+    expect(game.result(player1.move(), player2.move())).toEqual("It's a tie!");
   });
 
-  it("returns 'It's a draw!' when player1 is equal player2 ('lizard' - 'lizard')", function() {
+  it("returns 'It's a tie!' when player1 is equal player2 ('lizard' - 'lizard')", function() {
     player1 = jasmine.createSpyObj("player1", { move: "lizard" });
     player2 = jasmine.createSpyObj("player2", { move: "lizard" });
-    expect(game.result(player1.move(), player2.move())).toEqual("It's a draw!");
+    expect(game.result(player1.move(), player2.move())).toEqual("It's a tie!");
   });
 
-  it("returns 'It's a draw!' when player1 is equal player2 ('spock' - 'spock')", function() {
+  it("returns 'It's a tie!' when player1 is equal player2 ('spock' - 'spock')", function() {
     player1 = jasmine.createSpyObj("player1", { move: "spock" });
     player2 = jasmine.createSpyObj("player2", { move: "spock" });
-    expect(game.result(player1.move(), player2.move())).toEqual("It's a draw!");
+    expect(game.result(player1.move(), player2.move())).toEqual("It's a tie!");
   });
 
   it("returns 'rock wins!' when 'rock'-'scissors' ('rock' - 'scissors')", function() {
