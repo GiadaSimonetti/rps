@@ -1,10 +1,10 @@
-# RPSLS - (Rock - Paper - Scissors - Spock - Lizard)
+# RPSLS - (Rock - Paper - Scissors - Lizard - Spock)
 
-Rock - Paper - Scissors - Spock - Lizard game in Javascript and Karma for the tests
+Rock - Paper - Scissors - Lizard - Spock game in Javascript and Karma for the tests
 
 ![RPSLS](./images/RPSLS.png?raw=true)
 
-`It's easy:
+It's easy:
 
 * "Scissors cuts paper,
 * paper covers rock,
@@ -15,7 +15,7 @@ Rock - Paper - Scissors - Spock - Lizard game in Javascript and Karma for the te
 * lizard eats paper,
 * paper disproves Spock,
 * Spock vaporizes rock,
-* (and as it always has), rock crushes scissors."`
+* (and as it always has), rock crushes scissors."
 
 
 ## Instructions
