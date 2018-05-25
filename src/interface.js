@@ -2,10 +2,10 @@ let game = new Game();
 let movesArray = ["rock", "paper", "scissors", "lizard", "spock"];
 let move2 = movesArray[Math.floor(Math.random()* movesArray.length)];
 let userMoves = document.getElementsByClassName("astext");
+document.getElementById("reset-btn").style.visibility = "hidden";
 
 [].forEach.call(userMoves, function (move1) {
   move1.addEventListener('click', function () {
-    console.log(this.value);
 
     document.getElementById("submit-btn1").addEventListener("click", () => {
 
@@ -29,6 +29,7 @@ let userMoves = document.getElementsByClassName("astext");
         matchResult.innerHTML = response;
         matchResult.style.fontSize= "50px";
         document.getElementById("submit-btn2").style.visibility = "hidden";
+        document.getElementById("reset-btn").style.visibility = "visible";
 
       });
     });
