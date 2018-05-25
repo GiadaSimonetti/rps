@@ -4,7 +4,7 @@ Rock - Paper - Scissors - Spock - Lizard game in Javascript and Karma for the te
 
 ![RPSLS](./images/RPSLS.png?raw=true)
 
-It's easy:
+`It's easy:
 
 * "Scissors cuts paper,
 * paper covers rock,
@@ -15,9 +15,8 @@ It's easy:
 * lizard eats paper,
 * paper disproves Spock,
 * Spock vaporizes rock,
-* (and as it always has), rock crushes scissors."
+* (and as it always has), rock crushes scissors."`
 
-![Rock-Paper-Scissors-Spock-Lizard](./images/Rock-Paper-Scissors-Lizard-Spock.jpg?raw=true)
 
 ## Instructions
 
@@ -37,9 +36,20 @@ $ npm install
 $ open index.html
 ```
 - go to the browser
-- click the button `Choose your weapon!` to choose which weapon use
+- read the rules
+
+![rules](./images/rules.png?raw=true)
+- scroll down
+- click on one of the icon to choose which weapon use
+
+![1](./images/1.png?raw=true)
 - click the button `Click to play!` to start the game
+
+![2](./images/2.png?raw=true)
 - click the button `Try again` to start a new match
+
+![3](./images/3.png?raw=true)
+
 
 
 ### To run the tests

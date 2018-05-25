@@ -2,6 +2,7 @@ let game = new Game();
 let movesArray = ["rock", "paper", "scissors", "lizard", "spock"];
 let move2 = movesArray[Math.floor(Math.random()* movesArray.length)];
 let userMoves = document.getElementsByClassName("astext");
+
 document.getElementById("reset-btn").style.visibility = "hidden";
 document.getElementById("submit-btn2").style.visibility = "hidden";
 document.getElementById("second-instruction").style.visibility = "hidden";
