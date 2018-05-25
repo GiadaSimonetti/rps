@@ -49,7 +49,7 @@ h3 {
   margin-right: 400px;
 }
 
-#submit-btn1, #submit-btn2, #reset-btn {
+#submit-btn2, #reset-btn {
     background-color: #ed7777;
     border-radius: 7px;
     border: none;
@@ -84,10 +84,12 @@ h3 {
 
 .astext:active{
   color: #ed7777;
+  font-size: 90px;
 }
 
 .astext:focus{
   color: #ed7777;
+  font-size: 90px;
 }
 
 #player-choices-icons {
