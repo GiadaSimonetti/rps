@@ -1,27 +1,28 @@
 class Game {
   constructor(){
     this.combinations = [
-      ["paper", "scissors"],
-      ["rock", "paper"],
-      ["lizard", "rock"],
-      ["spock", "lizard"],
-      ["scissors", "spock"],
-      ["lizard", "scissors"],
-      ["paper", "lizard"],
-      ["spock", "paper"],
-      ["rock", "spock"],
-      ["scissors", "rock"]
+      { looser: "paper", winner: "scissors" },
+      { looser: "rock", winner: "paper" },
+      { looser: "lizard", winner: "rock" },
+      { looser: "spock", winner: "lizard" },
+      { looser: "scissors", winner: "spock" },
+      { looser: "lizard", winner: "scissors" },
+      { looser: "paper", winner: "lizard" },
+      { looser: "spock", winner: "paper" },
+      { looser: "rock", winner: "spock" },
+      { looser: "scissors", winner: "rock" }
     ];
   }
 
   result(player1, player2){
-    for (var i = 0; i < this.combinations.length; i++) {
-        if (player1 === this.combinations[i][0] && player2 === this.combinations[i][1]) {
-          return player2 + " wins!";
-        } else if (player1 === this.combinations[i][1] && player2 === this.combinations[i][0]){
-          return player1 + " wins!";
-        }
-      }
-      return "It's a tie!";
-    }
+
+    const player1Winner = this.combinations.find(combination => combination.winner === player1 );
+    const player1Looser = this.combinations.find(combination => combination.looser === player1 );
+    const player2Winner = this.combinations.find(combination => combination.winner === player2 );
+    const player2Looser = this.combinations.find(combination => combination.looser === player2 );
+    if (player1 === player2) return "It's a tie!";
+    if (player1Winner && player2Looser) return `${player1} wins!`;
+    if (player1Winner && player2Looser) return `${player2} wins!`;
+
+  }
 }
