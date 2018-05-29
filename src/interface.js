@@ -30,9 +30,10 @@ document.getElementById("second-instruction").style.visibility = "hidden";
 
       matchResult.innerHTML = response;
       matchResult.style.fontSize= "50px";
-      document.getElementById("submit-btn2").style.visibility = "hidden";
+      document.getElementById("submit-btn2").style.display = "none";
+      document.getElementById("player-choices").style.display = "none";
+      document.getElementById("second-instruction").style.display = "none";
       document.getElementById("reset-btn").style.visibility = "visible";
-      document.getElementById("second-instruction").style.visibility = "hidden";
 
     });
 
