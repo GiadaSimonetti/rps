@@ -55,5 +55,5 @@ $ open index.html
 ### To run the tests
 
 ```sh
-$ karma start
+$ npm run test
 ```
