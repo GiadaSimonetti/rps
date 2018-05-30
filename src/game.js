@@ -15,14 +15,11 @@ class Game {
   }
 
   result(player1, player2){
-    const player1Winner = this.combinations.find(combination => combination.winner === player1 && combination.loser === player2);
-    const player2Winner = this.combinations.find(combination => combination.winner === player2 && combination.loser === player1);
+    const player1Winner = this.combinations.find(combination =>
+      combination.winner === player1 && combination.loser === player2);
+    const player2Winner = this.combinations.find(combination =>
+      combination.winner === player2 && combination.loser === player1);
 
-    if (player1Winner) {
-        return `${player1} wins!`;
-      } else if (player2Winner) {
-        return `${player2} wins!`;
-      }
-      return "It's a tie!";
+    return player1Winner ? `${player1} wins!` : player2Winner ? `${player2} wins!` : "It's a tie!";
   }
 }
